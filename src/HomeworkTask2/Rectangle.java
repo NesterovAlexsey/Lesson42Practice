@@ -40,7 +40,8 @@ public class Rectangle {
       return false;
     }
 
-    return ((this.length * this.width) == (whatever.width * whatever.length));
+    return ((this.length == whatever.getLength()) || (this.length == whatever.getWidth())) &&
+        ((this.width == whatever.getLength()) || (this.width == whatever.getWidth()));
   }
 
   @Override
