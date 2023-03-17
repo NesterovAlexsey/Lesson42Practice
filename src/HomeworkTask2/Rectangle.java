@@ -11,4 +11,12 @@ package HomeworkTask2;
 //    - если их можно совместить, повернув и наложив друг на друга.
 
 public class Rectangle {
+
+  private int length;
+  private int width;
+
+  public Rectangle(int length, int width) {
+    this.length = length;
+    this.width = width;
+  }
 }
